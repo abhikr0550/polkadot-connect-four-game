@@ -1,0 +1,89 @@
+@keyframes drop-animation {
+  0% {
+    transform: translateY(-30vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.board-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Ensure the container takes full height */
+}
+
+.board {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  background-color: #0074D9;
+  padding: 10px;
+  border-radius: 10px;
+  width: 60vmin; /* Adjust size to fit within viewport */
+  height: 50vmin; /* Adjust size to fit within viewport */
+  margin: auto;
+}
+
+.row {
+  display: contents;
+}
+
+.cell {
+  width: 100%;
+  height: 100%;
+  background-color: #001f3f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.disc {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  position: absolute;
+  top: 1;
+  left: 10%;
+  transform: translateX(0);
+}
+
+.Red {
+  background-color: red;
+}
+
+.Yellow {
+  background-color: yellow;
+}
+
+.drop {
+  animation: drop-animation 0.5s ease-out;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #280d5e;
+  font-size: 60px;
+  font-family: Garamond;
+}
+
+.title-heading {
+  text-align: center;
+  color: #280d5e;
+  font-size: 60px;
+  font-family: Garamond;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.polka-dot-icon {
+  width: 30px;
+  height: 30px;
+}
