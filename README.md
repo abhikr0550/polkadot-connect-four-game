@@ -44,8 +44,7 @@ Smart Contracts: Deployed on Polkadot Chain using Web3.js and a Solidity contrac
 Notifications: Real-time feedback with react-notifications for seamless user experience.
 This blockchain-powered Connect 4 game brings a new level of excitement and security to a beloved classic, making each move count in the decentralized world.
 
-
-
+<img width="1415" alt="Screenshot 2024-07-28 at 11 09 22" src="https://github.com/user-attachments/assets/101ea20c-3643-4a80-ac8b-d24b917eea27">
 
 
 
