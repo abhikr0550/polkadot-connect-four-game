@@ -25,7 +25,8 @@
   border-radius: 10px;
   width: 60vmin; /* Adjust size to fit within viewport */
   height: 50vmin; /* Adjust size to fit within viewport */
-  margin: auto;
+  margin-top: 150px;
+  margin-bottom: 1px;
 }
 
 .row {
@@ -67,7 +68,14 @@
   animation: drop-animation 0.5s ease-out;
 }
 
-h1, h2 {
+h1 {
+  text-align: center;
+  color: #280d5e;
+  font-size: 60px;
+  font-family: Garamond;
+}
+
+h2 {
   text-align: center;
   color: #280d5e;
   font-size: 60px;

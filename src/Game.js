@@ -8,7 +8,7 @@ import { FaPlay } from 'react-icons/fa'; // Import play icon from react-icons
 
 let contract = null;
 let selectedAccount = null;
-const ADDRESS = "0x8a9b86bB527195133Df6eB446b7A9Ce79a1bc4D3";
+const ADDRESS = "";
 
 const loadedData = JSON.stringify(contractjson);
 const abi = JSON.parse(loadedData);
@@ -145,6 +145,10 @@ const Game = () => {
     } else {
       NotificationManager.error('Please connect metamask', '', 3000);
     }
+  }
+
+  function startGame1() {
+    setGameStarted(true)
   }
 
   async function startGame() {
@@ -353,7 +357,7 @@ const Game = () => {
           {selected !== null ? (
             <button className="fontStyle">Connected {selected}</button>
           ) : (
-            <button className="fontStyle" onClick={onConnectClick}>
+            <button className="fontStyle" onClick={startGame1}>
               Connect to Wallet
             </button>
           )}
@@ -378,12 +382,16 @@ const Game = () => {
           </div>
         ))}
       </div>
-      {winner && (
-      <h2 style={{ color: winner === 'Red' ? 'red' : 'yellow' }}>{winner} wins!</h2>)}
+      
       <audio ref={redAudioRef} src="sound/coin_drop.mp3" />
       <audio ref={yellowAudioRef} src="sound/coin_drop.mp3" />
     </div>
-    )}
+      )}
+
+    {winner && (
+  <h2 className="p2" style={{ color: winner === 'Red' ? 'red' : 'yellow' }}>{winner} wins!</h2>)}
+
+  
     </header>
   );
 };

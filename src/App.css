@@ -43,7 +43,7 @@ body, html {
 }
 
 .game-icon {
-  position: relative;
+  position: absolute;
   top: 0px;
   left: 10px;
   z-index: 3; /* Ensure the icon is always on top */
