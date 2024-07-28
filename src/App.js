@@ -16,7 +16,7 @@ function App() {
       </div>
       <Game/>
       <footer className="App-footer">
-        <p>© 2024 Connecting Polka. All rights reserved. Author: Abhishek Kumar, Satvik Khetan</p>
+        <p>© 2024 Connecting Polka. All rights reserved. Author: Abhishek Kumar</p>
       </footer>
     </div>
   );

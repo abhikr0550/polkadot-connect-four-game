@@ -8,7 +8,7 @@ import { FaPlay } from 'react-icons/fa'; // Import play icon from react-icons
 
 let contract = null;
 let selectedAccount = null;
-const ADDRESS = "";
+const ADDRESS = "0x8a9b86bB527195133Df6eB446b7A9Ce79a1bc4D3";
 
 const loadedData = JSON.stringify(contractjson);
 const abi = JSON.parse(loadedData);
@@ -358,7 +358,7 @@ const Game = () => {
           {selected !== null ? (
             <button className="fontStyle">Connected {selected}</button>
           ) : (
-            <button className="fontStyle" onClick={startGame1}>
+            <button className="fontStyle" onClick={onConnectClick}>
               Connect to Wallet
             </button>
           )}
