@@ -62,14 +62,14 @@ const Game = () => {
   const [winner, setWinner] = useState(null);
   const [lastMove, setLastMove] = useState(null);
   const [selected, setSelected] = useState(null);
-  const [hornSound, setHornSound] = useState(null);
+  const [gameBeginSound, setGameBeginSound] = useState(null);
   const [gameStarted, setGameStarted] = useState(false);
   const [countdown, setCountdown] = useState(3);
   const [countdownStarted, setCountdownStarted] = useState(false);
 
-  // useEffect(() => {
-  //   setHornSound(new Audio('horn.mp3'));
-  // }, []);
+  useEffect(() => {
+    setGameBeginSound(new Audio('sound/game_begin.wav'));
+  }, []);
 
   let publicCost = 1000000000000000000;
 
@@ -149,6 +149,7 @@ const Game = () => {
 
   function startGame1() {
     setGameStarted(true)
+    gameBeginSound.play();
   }
 
   async function startGame() {
@@ -382,16 +383,12 @@ const Game = () => {
           </div>
         ))}
       </div>
-      
+      {winner && (
+      <h2 style={{ color: winner === 'Red' ? 'red' : 'yellow' }}>{winner} wins!</h2>)}
       <audio ref={redAudioRef} src="sound/coin_drop.mp3" />
       <audio ref={yellowAudioRef} src="sound/coin_drop.mp3" />
     </div>
-      )}
-
-    {winner && (
-  <h2 className="p2" style={{ color: winner === 'Red' ? 'red' : 'yellow' }}>{winner} wins!</h2>)}
-
-  
+    )}
     </header>
   );
 };

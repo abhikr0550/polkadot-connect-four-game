@@ -7,11 +7,11 @@ function App() {
   return (
     <div className="App bg-image">
       <div className="header-container">
-        <div className="game-icon">
-          <img src="/images/game-icon.png" alt="Game Icon" />
-        </div>
         <div className="title-heading">
           <img src="/images/title1.png" alt="Title" />
+        </div>
+        <div className="game-icon">
+          <img src="/images/game-icon.png" alt="Game Icon" />
         </div>
       </div>
       <Game/>
