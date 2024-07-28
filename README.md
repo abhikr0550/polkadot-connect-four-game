@@ -47,6 +47,16 @@ This blockchain-powered Connect 4 game brings a new level of excitement and secu
 <img width="1415" alt="Screenshot 2024-07-28 at 11 09 22" src="https://github.com/user-attachments/assets/101ea20c-3643-4a80-ac8b-d24b917eea27">
 
 
+<img width="1407" alt="Screenshot 2024-07-28 at 11 10 33" src="https://github.com/user-attachments/assets/1da9bb3d-e736-4f1b-b384-89f8c72b63c5">
+
+<img width="1404" alt="Screenshot 2024-07-28 at 11 12 27" src="https://github.com/user-attachments/assets/c7d80a43-c2a9-4894-9eb6-8bf26762a5aa">
+
+
+<img width="1416" alt="Screenshot 2024-07-28 at 11 13 27" src="https://github.com/user-attachments/assets/31f761f9-2b76-4b2e-9218-2cf58574b618">
+
+
+
+
 
 
 
