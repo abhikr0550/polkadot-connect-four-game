@@ -57,6 +57,10 @@ This blockchain-powered Connect 4 game brings a new level of excitement and secu
 
 
 
+Video Demo:
+
+https://www.loom.com/share/87cdcac196df42d0aa0ae603e92ee4bc?sid=f5294988-b5a8-491c-80ca-68a91f62be59
+
 
 
 
