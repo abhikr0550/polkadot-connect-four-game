@@ -43,15 +43,15 @@ body, html {
 }
 
 .game-icon {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+  position: relative;
+  top: 0px;
+  left: 10px;
   z-index: 3; /* Ensure the icon is always on top */
 }
 
 .game-icon img {
-  width: 100px; /* Adjust size to fit the screen */
-  height: 100px; /* Adjust size to fit the screen */
+  width: 250px; /* Adjust size to fit the screen */
+  height: 250px; /* Adjust size to fit the screen */
 }
 
 .title-heading {

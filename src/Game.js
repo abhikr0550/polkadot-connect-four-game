@@ -6,10 +6,9 @@ import Web3 from 'web3';
 import contractjson from './details/contract.json';
 import { FaPlay } from 'react-icons/fa'; // Import play icon from react-icons
 
-
 let contract = null;
 let selectedAccount = null;
-const ADDRESS = "0x6d5722f52345c064ab245921f3e5c13bb1ec7d99fdc5a75241bf6e83070accfe";
+const ADDRESS = "0x8a9b86bB527195133Df6eB446b7A9Ce79a1bc4D3";
 
 const loadedData = JSON.stringify(contractjson);
 const abi = JSON.parse(loadedData);
@@ -42,6 +41,15 @@ const checkDirection = (board, row, col, rowDir, colDir) => {
     const newRow = row + rowDir * i;
     const newCol = col + colDir * i;
     if (newRow < 0 || newRow >= ROWS || newCol < 0 || newCol >= COLS || board[newRow][newCol] !== player) {
+      return false;
+    }
+  }
+  return true;
+};
+
+const isBoardFull = (board) => {
+  for (let col = 0; col < COLS; col++) {
+    if (!board[0][col]) {
       return false;
     }
   }
@@ -305,6 +313,32 @@ const Game = () => {
           const newWinner = checkWin(newBoard);
           setWinner(newWinner);
           setCurrentPlayer('Red');
+        } else {
+          // If the chosen column is full, find another valid move
+          const validMoves = [];
+          for (let col = 0; col < COLS; col++) {
+            if (!board[0][col]) {
+              validMoves.push(col);
+            }
+          }
+          if (validMoves.length > 0) {
+            const newCol = validMoves[Math.floor(Math.random() * validMoves.length)];
+            row = ROWS - 1;
+            while (row >= 0 && newBoard[row][newCol]) {
+              row--;
+            }
+            if (row >= 0) {
+              newBoard[row][newCol] = 'Yellow';
+              setLastMove({ row, newCol });
+              setBoard(newBoard);
+
+              playSound('Yellow');
+
+              const newWinner = checkWin(newBoard);
+              setWinner(newWinner);
+              setCurrentPlayer('Red');
+            }
+          }
         }
       };
 
@@ -314,8 +348,6 @@ const Game = () => {
   }, [currentPlayer, board, winner]);
 
   return (
-
-
     <header className="App-header">
       <div className="connectWallet">
           {selected !== null ? (
@@ -334,12 +366,6 @@ const Game = () => {
             </button>
           </div>
         ) : (
-          
-        
-
-
-
-
     <div className="board-container">
       <div className="board">
         {board.map((row, rowIndex) => (

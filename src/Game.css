@@ -87,3 +87,27 @@ h1, h2 {
   width: 30px;
   height: 30px;
 }
+
+
+.connectWallet {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+.connectWallet .fontStyle {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0074D9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.connectWallet .fontStyle:hover {
+  background-color: #005bb5;
+}
+
