@@ -4,73 +4,51 @@
 # polkadot-connect-four-game
 A four in a row game deployed on smart contract.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Overview:
+Our Connect 4 game is a blockchain-integrated version of the classic two-player strategy game, deployed on the Polkadot Chain. Players connect their crypto wallets to participate, ensuring secure and decentralized gameplay.
 
-### `npm test`
+Features:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Wallet Integration:
 
-### `npm run build`
+Players connect their Metamask wallet to join the game.
+Secure transactions and authentication via the Polkadot Chain.
+Game Mechanics:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Traditional Connect 4 rules: Players take turns dropping discs into columns, aiming to align four discs vertically, horizontally, or diagonally.
+Real-time disc drop animation for enhanced visual experience.
+Blockchain Transactions:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Starting a game requires a transaction, ensuring commitment and engagement.
+Smart contracts manage game logic and transactions.
+Countdown Timer:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+A countdown timer initiates the game, building anticipation.
+Winner Announcement:
 
-### `npm run eject`
+The game detects winning conditions and announces the winner.
+Sound Effects:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Audio cues for player actions enhance interactivity.
+Technical Details:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Frontend: Built with React.js for a dynamic and responsive user interface.
+Smart Contracts: Deployed on Polkadot Chain using Web3.js and a Solidity contract.
+Notifications: Real-time feedback with react-notifications for seamless user experience.
+This blockchain-powered Connect 4 game brings a new level of excitement and security to a beloved classic, making each move count in the decentralized world.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
